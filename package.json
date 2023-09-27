@@ -1,0 +1,19 @@
+{
+  "name": "mylibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "json-server --watch db.json --port 5444 --host 127.0.0.1"
+  },
+  "keywords": [],
+  "author": "Trullez uwu",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "0.17.3"
+  },
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}

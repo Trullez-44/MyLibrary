@@ -1,0 +1,15 @@
+{
+    "posts": [
+      { "id": 1, "title": "Prueba Json SERVER", "author": "The Quagmire" }
+    ],
+    "comments": [
+      { "id": 1, "body": "I'm just a comment, sapa", "postId": 1 }
+    ],
+    "profile": { "name": "Don UwUr" },
+    "TESTING-SAPA": [
+        {
+            "testing-object": "This value is into a array into a object with the name 'testing-objet' " 
+        }
+    ]
+
+  }
