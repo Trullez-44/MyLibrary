@@ -1,0 +1,19 @@
+{
+  "CATEGORY":[],
+  "EDITORAL":[],
+  "STATUS-BOOK":[],
+  "BOOK":[
+    {
+      "greetings": "Hi",
+      "person": "Andy",
+      "age": 21,
+      "date":"today"
+    }
+  ],
+  "LOAN":[],
+  "BACKUP":[],
+  "AUTHOR":[],
+  "USER":[]
+
+
+}

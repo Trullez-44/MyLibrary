@@ -7,12 +7,7 @@ const url = "http://127.0.0.4:5444/TESTING-SAPA"
 //CALLING
 // data_get();
 //NEW DATA TO POST
-let dict = {
-    greetings: 'hi',
-    person:'andys',
-    age: 21,
-    date:' today'
-}
+
 //POST REQUEST FUNCTION
 const data_post=async (data) => {
   // console.log(JSON.stringify(data));
