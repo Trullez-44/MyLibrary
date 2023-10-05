@@ -9,14 +9,14 @@ const config ={
     body: undefined
 }
 let objeto = {
-    greetings: "Bye",
-    person: "Andrew",
-    age: 21,
-    date:"tomorrow"
+    greetings: "I miss you",
+    person: "Luisa",
+    age: 20,
+    date:"5 months ago"
 }
-export const getAll = async (endpoint) => {
+export const getAll_Funct = async () => {
     config.method = "GET"
-    const data  = await (await fetch(`${uri + endpoint}`, config)).json();
+    const data  = await (await fetch(`${uri + 'BOOK'}`, config)).json();
     return data
 }
 export const post_Funct = async (obj) => {
@@ -27,15 +27,19 @@ export const post_Funct = async (obj) => {
     return data
 
 }
-export const deleteOne = async (endpoint, id) => {
+export const deleteOne_Func = async (id) => {
     if (typeof id !== 'number') return {status: 400, message: 'Invalid Type: ' + id};
     config.method = "DELETE"
-    const data  = await (await fetch(`${uri + endpoint + '/' + id}`, config)).json();
+    const data  = await (await fetch(`${uri + 'BOOK' + '/' + id}`, config)).json();
     return data
 }
-
-
-
+export const put_Funct = async (obj, id) => {
+    config.method = "PUT"
+    config.body = JSON.stringify(obj);
+    
+    const data  = await (await fetch(`${uri+'BOOK'+ '/' + id}`, config)).json();
+    return data
+}
 // post_Funct(objeto);
-console.log(await deleteOne('BOOK', 5));
+console.log(await put_Funct(objeto, 1));
 
