@@ -22,7 +22,7 @@ const data_post=async (data) => {
     console.log('finish')
   }
   //CALLING
-data_post(dict);
+/* data_post(dict); */
 /*  */
 // const data_put=async (id) => {  
 //   let call = (await fetch("http://127.0.0.1:5444/TESTING-SAPA"+id))
