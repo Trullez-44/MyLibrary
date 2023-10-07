@@ -40,19 +40,19 @@ export const deleteOne_Func = async (id) => {
 };
 export const put_Funct = async (obj, consult) => {
 	const { id, authorId, categoryId, editorialId, title, releaseDate, isbn, pagination, statusBook } = obj;
-	let date = '';
-	if (date = new Date(releaseDate) == 'Invalid Date') return ('ola');
+	let date = "";
+	if ((date = new Date(releaseDate) == "Invalid Date")) return "ola";
 	if (typeof id !== "number") return { status: 400, message: "Invalid Type: " + id };
 	if (typeof authorId !== "number") return { status: 400, message: "Invalid Author: " + authorId };
 	if (typeof categoryId !== "number") return { status: 400, message: "Invalid Category: " + categoryId };
 	if (typeof editorialId !== "number") return { status: 400, message: "Invalid Editorial: " + editorialId };
 	if (typeof statusBook !== "number") return { status: 400, message: "Invalid Type: " + statusBook };
-	if (typeof pagination!== "number") return { status: 400, message: "Invalid Number of Pages: " + pagination };
+	if (typeof pagination !== "number")
+		return { status: 400, message: "Invalid Number of Pages: " + pagination };
 	if (typeof title !== "string") return { status: 400, message: "Invalid Ttile: " + title };
-	if (!(date && date.getFullYear() <= 2024)) return { status: 400, message: "Invalid Date: "+releaseDate};
+	if (!(date && date.getFullYear() <= 2024))
+		return { status: 400, message: "Invalid Date: " + releaseDate };
 	if (typeof isbn !== "string") return { status: 400, message: "Invalid ISBN: " + isbn };
-	
-	
 
 	config.method = "PUT";
 	config.body = JSON.stringify(obj);
