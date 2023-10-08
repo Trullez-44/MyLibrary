@@ -4,10 +4,14 @@
   "STATUS-BOOK": [],
   "BOOK": [
     {
-      "greetings": "I miss you",
-      "person": "Luisa",
-      "age": 20,
-      "date": "5 months ago",
+      "releaseDate": "2023-10-11",
+      "authorId": 1,
+      "isbn": "ISBN",
+      "title": "Harry Potter",
+      "pagination": 230,
+      "statusBook": 1,
+      "editorialId": 1,
+      "categoryId": 1,
       "id": 1
     },
     {
